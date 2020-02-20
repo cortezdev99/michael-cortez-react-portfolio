@@ -1,5 +1,9 @@
-# React/Redux/Router Starter Project
+# Michael Cortez React Portfolio Application
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
+### After downloading
+  - $ npm install
+  - npm run start
 
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+### To Edit The App
+  - Go into the src/components/app.js
+  - Add whatever html you want to render
