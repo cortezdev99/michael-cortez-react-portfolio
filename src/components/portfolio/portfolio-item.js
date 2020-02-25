@@ -5,9 +5,12 @@ export default function(props) {
   const { id, description, thumb_image_url, logo } = props.item;
   return (
     <div>
-      <div>{description}</div>
+      <img src={thumb_image_url} />
+      <img src={logo} />
 
-      <Link to={`/portfolio/${props.slug}`}>Link</Link>
+
+      <div>{description}</div>
+      <Link to={`/portfolio/${id}`}>Link</Link>
     </div>
   )
 }
