@@ -40,6 +40,7 @@ export default class Login extends Component {
         })
       }
     }).catch(error => {
+      console.log("some errer", error)
       this.setState({
         errorText: "An error occured"
       })
