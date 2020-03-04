@@ -12,7 +12,7 @@ export default class PortfolioForm extends Component {
     this.state = {
       name: "",
       description: "",
-      category: "Python",
+      category: "eCommerce",
       position: "",
       url: "",
       thumb_image: "",
@@ -56,16 +56,13 @@ export default class PortfolioForm extends Component {
         id: id,
         name: name || "",
         description: description || "",
-        category: category || "Python",
+        category: category || "eCommerce",
         position: position || "",
         url: url || "",
-        thumb_image: thumb_image_url || "",
-        banner_image: banner_image_url || "",
-        logo: logo_url || "",
         editMode: true,
         apiUrl: `https://michaelcortez.devcamp.space/portfolio/portfolio_items/${id}`,
         apiAction: "patch"
-      })
+      });
     }
   }
 
@@ -140,17 +137,24 @@ export default class PortfolioForm extends Component {
       withCredentials: true
     })
       .then(response => {
-        this.props.handleSuccessfulFormSubmission(response.data.portfolio_item);
+        if (this.state.editMode) {
+          this.props.handleEditFormSubmission();
+        } else {
+          this.props.handleNewFormSubmission(response.data.portfolio_item);
+        }
 
         this.setState({
           name: "",
           description: "",
-          category: "Python",
+          category: "eCommerce",
           position: "",
           url: "",
           thumb_image: "",
           banner_image: "",
-          logo: ""
+          logo: "",
+          editMode: false,
+          apiUrl: "https://michaelcortez.devcamp.space/portfolio/portfolio_items",
+          apiAction: "post"
         });
 
         [this.thumbRef, this.bannerRef, this.logoRef].forEach(ref => {
@@ -195,10 +199,10 @@ export default class PortfolioForm extends Component {
           />
 
           <select
-          className="select-element"
             name="category"
             value={this.state.category}
             onChange={this.handleChange}
+            className="select-element"
           >
             <option value="eCommerce">eCommerce</option>
             <option value="Scheduling">Scheduling</option>
@@ -246,7 +250,9 @@ export default class PortfolioForm extends Component {
         </div>
 
         <div>
-          <button className="btn" type="submit">Save</button>
+          <button className="btn" type="submit">
+            Save
+          </button>
         </div>
       </form>
     );
