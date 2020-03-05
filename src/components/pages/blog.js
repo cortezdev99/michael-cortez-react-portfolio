@@ -24,7 +24,7 @@ export default class Blog extends Component {
   }
 
   // React v17 and above calls this unsafe
-  componentDidMount() {
+  componentWillMount() {
     this.getBlogItems()
   }
 
