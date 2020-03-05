@@ -30,7 +30,7 @@ export default class Blog extends Component {
 
   render() {
     const blogRecords = this.state.blogItems.map(blogItem => {
-      return <h1>{blogItem.title}</h1>
+      return <h1 key={blogItem.key}>{blogItem.title}</h1>
     })
 
     return (
