@@ -16,7 +16,13 @@ export default class Blog extends Component {
 
   activateInfiniteScroll() {
     window.onscroll = () => {
-      console.log("onscroll")
+      // console.log("window.innerHeight", window.innerHeight)
+      // console.log("document.documentElement.scrollTop", document.documentElement.scrollTop)
+      // console.log("document.documentElement.offsetHeight", document.documentElement.offsetHeight)
+
+      if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+        console.log("get more posts")
+      }
     }
   }
 
