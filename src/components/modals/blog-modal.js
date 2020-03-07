@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ReactModal from 'react-modal'
 
+ReactModal.setAppElement(".app-wrapper")
+
 export default class BlogModal extends Component {
   constructor(props) {
     super(props)
@@ -28,7 +30,6 @@ export default class BlogModal extends Component {
         this.props.handleModalClose()
       }} 
         isOpen={this.props.modalIsOpen}
-        ariaHideApp={false}
       >
         <h1>I'm in a modal!</h1>
       </ReactModal>
