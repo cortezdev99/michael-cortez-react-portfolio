@@ -94,7 +94,7 @@ export default class Blog extends Component {
 
         <div className="new-blog-link">
           <a onClick={this.handleNewBlogClick}>
-            Open Modal!
+            <FontAwesomeIcon icon="plus-circle" />
           </a>
         </div>
 
@@ -104,7 +104,7 @@ export default class Blog extends Component {
 
         {this.state.isLoading ? (
           <div className="content-loader">
-            <FontAwesomeIcon icon="yin-yang" spin/>
+            <FontAwesomeIcon icon="yin-yang" spin />
           </div>
         ) : (
           null
