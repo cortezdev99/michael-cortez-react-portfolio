@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 export default class PortfolioDetail extends Component {
@@ -27,11 +28,9 @@ export default class PortfolioDetail extends Component {
   render() {
     const {
       banner_image_url,
-      category,
       description,
       logo_url,
       name,
-      thumb_image_url,
       url
     } = this.state.portfolioItem
 
