@@ -1,0 +1,12 @@
+@media (max-width: 411px) {
+  .content-page-wrapper {
+    display: flex;
+    width: 100%;
+    grid-template-columns: none;
+    height: 100%;
+
+    .right-column {
+      padding: 30px;
+    }
+  }
+}
