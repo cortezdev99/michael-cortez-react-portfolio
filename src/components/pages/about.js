@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePicture from "../../../static/assets/images/bio/me.jpg"
+import profilePicture from "../../../static/assets/images/bio/headshot.jpeg"
 
 export default function () {
   return (
@@ -19,7 +19,6 @@ export default function () {
         I'm a headstrong very social and confident kinda guy, I love to challenge myself and I am continuing to push my knowledge to new limits! Some of my hobby's include CODING!!, but seriously I do enjoy coding, I also love going on hikes up in the mountains nearest to me, as well as killing a pizza while binge watching a Netflix series. 
         I enjoy deep conversations over small talk, once you get me going I don't stop!  
         Thank you for taking the time to read this and if you're still here, connect with me! Send me a message and lets talk about whatever! 
-        I'm the one on the right!!
 
         -- links --
             -- Git hub --
