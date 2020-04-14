@@ -4,7 +4,7 @@
     width: 100%;
     grid-template-columns: none;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 81px);
 
     .left-column {
       height: 285px;

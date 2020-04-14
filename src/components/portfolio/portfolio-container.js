@@ -66,7 +66,7 @@ export default class PortfolioContainer extends Component {
           <div className="filter-links">
             <button className="btn" onClick={() => this.handleFilter('Python')}>Python</button>
             <button className="btn" onClick={() => this.handleFilter('React')}>React</button>
-            <button className="btn" onClick={() => this.handleFilter('Html/Css/Js')}>Html/Css/Js</button>
+            <button className="btn" onClick={() => this.handleFilter('Firebase')}>Firebase</button>
             <button className="btn" onClick={() => this.handleFilter('CLEAR_FILTERS')}>All</button>
           </div>
 
