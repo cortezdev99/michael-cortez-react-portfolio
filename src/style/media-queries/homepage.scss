@@ -3,40 +3,50 @@
     max-width: 100%;
     overflow-x: hidden;
 
-      .nav-wrapper {
-        padding: 0px;
-      
-        .left-side {
-          align-items: center;
-          display: flex;
-          padding-bottom: 10px;
-          padding-top: 10px;
-          padding-left: 5px;
-        }
-      
-        .right-side {
-          p {
-            padding-right: 5px;
-            font-size: 13px;
-            margin-block-start: 0.835em;
-            margin-block-end: 0.835em;
+    .container {
+      div {
+        .nav-wrapper {
+          padding: 0px;
+          height: 40px;
+        
+          .left-side {
+            // align-items: center;
+            // display: flex;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 5px;
+
+            .nav-link-wrapper {
+              border-bottom: 1px solid transparent;
+            }
+          }
+        
+          .right-side {
+            height: 0%;
+            p {
+              padding-right: 5px;
+              font-size: 13px;
+              margin-block-start: 0.835em;
+              margin-block-end: 0.835em;
+            }
           }
         }
-      }
-      
-      .portfolio-items-wrapper {
-        grid-template-columns: 1fr;
-      
-        .portfolio-item-wrapper {
-          position: relative;
-      
-          .img-text-wrapper {
-            padding-left: 0px;
-            padding-right: 0px;
-            width: 100%;
+        
+        .portfolio-items-wrapper {
+          grid-template-columns: 1fr;
+        
+          .portfolio-item-wrapper {
+            position: relative;
+        
+            .img-text-wrapper {
+              padding-left: 0px;
+              padding-right: 0px;
+              width: 100%;
+            }
           }
         }
       }
     }
+  }
 }
 
