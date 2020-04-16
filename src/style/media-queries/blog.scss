@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+  .blog-container {
+    align-items: center;
+
+    .content-container {
+      width: initial;
+    }
+  }
+}
+
 @media (max-width: 411px) {
   .container {
     div {
